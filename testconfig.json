@@ -1,0 +1,106 @@
+{
+  "jobs": [
+    {
+      "type": "encrypted",
+      "args": {
+        "format": "json",
+        "data": "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IHNjcnlwdCB5eCtiMzQ5RWlZRXo4dTNpRE8veHdRIDE4CmYyb2d0YXlnaXptS25sbUJlQUVaUHpRbngwaUdBYUpJRStHbFltdUVNNkUKLS0tIG5oUUVCd041TWJoNWNCQjhvODk4eUFpUldmUFUvaStpanRsdCtWR0RrSVkK2ehc+JYVl+f5VgLKV0mG/J4CQrtHn+FFV5AAcKiLEAjU6MNDaVqBI6Qm9RunLZ51wAA13DLZkPJH39DcsS77H3HmgLpRQ7DMFG2AIDxWysIt2Yi2hVVn9Ogea73twGa8FOpk2kk0Z7NSHCCcpTJd1Db4cwYJiIFaqfBXR+VZtNk3qBgUMStN1CiOyJxvHbnc6tbfeqq042LImKsaLvFzB2y5H/ec9BonHimrP/aZv6dhequs"
+      }
+    },
+    {
+      "type": "http",
+      "args": {
+        "request": {
+          "method": "GET",
+          "path": "http://localhost:8080/test?queryparam=test&s={{ random_uuid }}",
+          "headers": {
+            "Authorization": "wtf"
+          }
+        },
+        "client": {
+          "proxy_urls": "{{ join get_proxylist \",\" }}"
+        },
+        "interval_ms": 100
+      }
+    },
+    {
+      "type": "tcp",
+      "count": 100,
+      "args": {
+        "address": "localhost:9090",
+        "body": "more_test",
+        "interval_ms": 1000
+      }
+    },
+    {
+      "type": "udp",
+      "filter": "{{ (.Value (ctx_key \"global\")).EnablePrimitiveJobs }}",
+      "count": 100,
+      "args": {
+        "address": "localhost:9191",
+        "header": "test",
+        "body": "more_test",
+        "interval_ms": 1000
+      }
+    },
+    {
+      "type": "http",
+      "args": {
+        "request": {
+          "method": "GET",
+          "path": "https://127.0.0.1/",
+          "headers": {
+            "HOST": "localhost"
+          }
+        }
+      }
+    },
+    {
+      "type": "dns-blast",
+      "filter": "{{ (.Value (ctx_key \"global\")).EnablePrimitiveJobs }}",
+      "args": {
+        "root_domain": "example.com",
+        "protocol": "udp",
+        "seed_domains": ["yahoo.com"],
+        "parallel_queries": 3,
+        "interval_ms": 100
+      }
+    },
+    {
+      "type": "slow-loris",
+      "args": {
+        "path": "https://localhost:9090/inc2/common/js/doo/modules/searchSite/u.php"
+      }
+    },
+    {
+      "type": "packetgen",
+      "filter": "{{ (.Value (ctx_key \"global\")).EnablePrimitiveJobs }}",
+      "args": {
+        "host": "{{ resolve_host \"localhost\" }}",
+        "port": "{{ random_port }}",
+        "packet": {
+          "payload": "test:blah",
+          "ethernet": {
+            "src_mac": "{{ random_mac_addr }}",
+            "dst_mac": "{{ random_mac_addr }}"
+          },
+          "ip": {
+            "src_ip": "{{ local_ip }}",
+            "dst_ip": "{{ resolve_host \"localhost\" }}"
+          },
+          "tcp": {
+            "src_port": "{{ random_port }}",
+            "dst_port": "{{ random_port }}",
+            "flags": {
+              "syn": true
+            }
+          },
+          "udp": {
+            "src_port": "{{ random_port }}",
+            "dst_port": "{{ random_port }}"
+          }
+        }
+      }
+    }
+  ]
+}
