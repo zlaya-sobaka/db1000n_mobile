@@ -9,8 +9,8 @@ import (
 	"github.com/blang/semver"
 	"github.com/rhysd/go-github-selfupdate/selfupdate"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 var (

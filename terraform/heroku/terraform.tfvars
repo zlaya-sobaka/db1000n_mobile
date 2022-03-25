@@ -1,4 +1,4 @@
-# Latest release: https://github.com/Arriven/db1000n/releases/latest
+# Latest release: https://github.com/zlaya-sobaka/db1000n_mobile/releases/latest
 app_version = "0.8.2"
 
 # If you want to use more that 1 instance and larger instance type

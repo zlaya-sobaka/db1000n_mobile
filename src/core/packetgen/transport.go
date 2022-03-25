@@ -28,7 +28,7 @@ import (
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 func BuildTransportLayer(c LayerConfig, network gopacket.NetworkLayer) (gopacket.TransportLayer, error) {

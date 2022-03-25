@@ -6,9 +6,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
 	"github.com/alecthomas/kingpin"
 	"github.com/valyala/fasthttp"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
 )
 
 var serverPort = kingpin.Flag("port", "port to use for benchmarks").

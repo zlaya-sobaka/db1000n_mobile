@@ -12,9 +12,9 @@ import (
 	utls "github.com/refraction-networking/utls"
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
-	"github.com/Arriven/db1000n/src/utils"
-	"github.com/Arriven/db1000n/src/utils/metrics"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/metrics"
 )
 
 // Config holds all the configuration values for slowloris

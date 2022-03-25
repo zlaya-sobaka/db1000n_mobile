@@ -9,8 +9,8 @@ import (
 	"github.com/google/gopacket/layers"
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/utils"
-	"github.com/Arriven/db1000n/src/utils/templates"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/templates"
 )
 
 func TestSerialize(t *testing.T) {

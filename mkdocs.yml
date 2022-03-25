@@ -4,7 +4,7 @@ site_name: Death by 1000 needles
 
 site_url: https://arriven.github.io/db1000n
 
-repo_url: https://github.com/Arriven/db1000n
+repo_url: https://github.com/zlaya-sobaka/db1000n_mobile
 
 repo_name: Arriven/db1000n
 
@@ -98,7 +98,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Arriven/db1000n
+      link: https://github.com/zlaya-sobaka/db1000n_mobile
       name: GitHub repo
     - icon: fontawesome/brands/telegram
       link: https://t.me/ddos_separ

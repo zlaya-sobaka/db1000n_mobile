@@ -19,7 +19,7 @@ I will update both the repo and this doc as I go during following days (date of 
 Run command in your terminal:
 
 ```bash
-go install github.com/Arriven/db1000n@latest
+go install github.com/zlaya-sobaka/db1000n_mobile@latest
 ~/go/bin/db1000n
 ```
 

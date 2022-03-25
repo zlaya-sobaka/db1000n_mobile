@@ -33,9 +33,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Arriven/db1000n/src/jobs"
-	"github.com/Arriven/db1000n/src/mobilelogger"
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/jobs"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 // Config for all jobs to run

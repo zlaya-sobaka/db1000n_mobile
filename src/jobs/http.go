@@ -32,11 +32,11 @@ import (
 	"github.com/valyala/fasthttp"
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/core/http"
-	"github.com/Arriven/db1000n/src/mobilelogger"
-	"github.com/Arriven/db1000n/src/utils"
-	"github.com/Arriven/db1000n/src/utils/metrics"
-	"github.com/Arriven/db1000n/src/utils/templates"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/core/http"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/metrics"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/templates"
 )
 
 type httpJobConfig struct {

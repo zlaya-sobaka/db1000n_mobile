@@ -4,7 +4,7 @@ ifeq ($(GOOS),windows)
 	APP_NAME := $(addsuffix .exe,$(APP_NAME))
 endif
 
-REPOSITORY_BASE_PATH := github.com/Arriven/db1000n
+REPOSITORY_BASE_PATH := github.com/zlaya-sobaka/db1000n_mobile
 LATEST_TAG := $(shell git describe --tags --abbrev=0)
 
 # Remove debug information (ELF) to strip the binary size

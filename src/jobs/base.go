@@ -31,7 +31,7 @@ import (
 	"github.com/google/uuid"
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 // Args comment for linter

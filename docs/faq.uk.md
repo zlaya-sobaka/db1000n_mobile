@@ -8,7 +8,7 @@
 
 ???+ faq "Я встановив `db1000n` але щось працює не так. Що робити?"
 
-    Створіть [Issue](https://github.com/Arriven/db1000n/issues) і спільнота допоможе вам вирішити проблему
+    Створіть [Issue](https://github.com/zlaya-sobaka/db1000n_mobile/issues) і спільнота допоможе вам вирішити проблему
 
 ---
 
@@ -16,16 +16,16 @@
 
     - Діліться інформацією про `db1000n` в соц.мережах, з друзями і колегами
     - Запустіть `db1000n` повсюди де можливо (домашні компи, публічні клауди, Docker, Kubernetes, і т.д.)
-    - створюйте [Issues](https://github.com/Arriven/db1000n/issues) або
-      [Pull Requests](https://github.com/Arriven/db1000n/pulls)
+    - створюйте [Issues](https://github.com/zlaya-sobaka/db1000n_mobile/issues) або
+      [Pull Requests](https://github.com/zlaya-sobaka/db1000n_mobile/pulls)
       якщо ви знаходите баги, проблеми в документації, опечатки, і т.д.
 
 ---
 
 ???+ faq "Я розробник, як я можу допомогти проекту?"
 
-    - Продивіться [Issues](https://github.com/Arriven/db1000n/issues) щоб допомогти з важливими задачами
-    - Продивіться базу коду і робіть [PRs](https://github.com/Arriven/db1000n/pulls)
+    - Продивіться [Issues](https://github.com/zlaya-sobaka/db1000n_mobile/issues) щоб допомогти з важливими задачами
+    - Продивіться базу коду і робіть [PRs](https://github.com/zlaya-sobaka/db1000n_mobile/pulls)
     - Тестуйте додаток на різних платформах і повідомляйте про баги або додавайте фічі
 
 ---
@@ -51,7 +51,7 @@
 
 ???+ faq "Чи варто турбуватися про витрати, якщо я запускаю програму в загальнодоступній хмарі?"
 
-    ???+ info "[Так](https://github.com/Arriven/db1000n/issues/153)"
+    ???+ info "[Так](https://github.com/zlaya-sobaka/db1000n_mobile/issues/153)"
 
         Хмарні провайдери можуть стягувати величезні гроші не тільки за обчислювальні ресурси,
         а й за трафік. Якщо ви запускаєте програму в хмарі, будь ласка, керуйте своїми платежами

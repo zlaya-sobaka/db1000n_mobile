@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
 	"github.com/mitchellh/mapstructure"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
 	"go.uber.org/zap"
 	"gopkg.in/yaml.v3"
 )

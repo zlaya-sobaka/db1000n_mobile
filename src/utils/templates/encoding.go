@@ -6,7 +6,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 // toYAML takes an interface, marshals it to yaml, and returns a string. It will

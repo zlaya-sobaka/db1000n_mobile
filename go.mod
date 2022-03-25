@@ -1,4 +1,4 @@
-module github.com/Arriven/db1000n
+module github.com/zlaya-sobaka/db1000n_mobile
 
 go 1.17
 

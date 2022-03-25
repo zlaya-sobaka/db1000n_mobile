@@ -33,9 +33,9 @@ import (
 	"github.com/valyala/fasthttp"
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/utils"
-	"github.com/Arriven/db1000n/src/utils/metrics"
-	"github.com/Arriven/db1000n/src/utils/templates"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/metrics"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/templates"
 )
 
 // RequestConfig is a struct representing the config of a single request

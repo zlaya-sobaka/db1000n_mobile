@@ -27,11 +27,11 @@
 
 1. Завантажте останню версію програми для вашої платформи:
 
-   - [Windows](https://github.com/Arriven/db1000n/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-windows-386.zip)
-   - [Mac M1](https://github.com/Arriven/db1000n/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-darwin-arm64.tar.gz)
-   - [Mac Intel](https://github.com/Arriven/db1000n/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-darwin-amd64.tar.gz)
-   - [Linux 32bit](https://github.com/Arriven/db1000n/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-linux-386.zip)
-   - [Linux 64bit](https://github.com/Arriven/db1000n/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-linux-amd64.tar.gz)
+   - [Windows](https://github.com/zlaya-sobaka/db1000n_mobile/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-windows-386.zip)
+   - [Mac M1](https://github.com/zlaya-sobaka/db1000n_mobile/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-darwin-arm64.tar.gz)
+   - [Mac Intel](https://github.com/zlaya-sobaka/db1000n_mobile/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-darwin-amd64.tar.gz)
+   - [Linux 32bit](https://github.com/zlaya-sobaka/db1000n_mobile/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-linux-386.zip)
+   - [Linux 64bit](https://github.com/zlaya-sobaka/db1000n_mobile/releases/download/{{ git_latest_version_tag }}/db1000n-{{ git_latest_version_tag }}-linux-amd64.tar.gz)
 
 1. Розпакуйте архів
 1. Запустіть файл з архіву
@@ -64,7 +64,7 @@
 
 ### Бінарний файл
 
-Завантажте [останній реліз](https://github.com/Arriven/db1000n/releases/latest) згідно вашої архітектури/ОС.
+Завантажте [останній реліз](https://github.com/zlaya-sobaka/db1000n_mobile/releases/latest) згідно вашої архітектури/ОС.
 Розпакуйте архів та запустіть файл
 
 ### Docker

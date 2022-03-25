@@ -8,7 +8,7 @@
 
 ???+ faq "I installed `db1000n` but it's not working properly. What to do?"
 
-    Create [Issue](https://github.com/Arriven/db1000n/issues) and community will help you with solving a problem
+    Create [Issue](https://github.com/zlaya-sobaka/db1000n_mobile/issues) and community will help you with solving a problem
 
 ---
 
@@ -16,16 +16,16 @@
 
     - Share information about `db1000n` in social media, with your friends and colleagues
     - Run `db1000n` on every possible platform (local machine, public clouds, Docker, Kubernetes, etc)
-    - Create [Issues](https://github.com/Arriven/db1000n/issues) or
-      [Pull Requests](https://github.com/Arriven/db1000n/pulls)
+    - Create [Issues](https://github.com/zlaya-sobaka/db1000n_mobile/issues) or
+      [Pull Requests](https://github.com/zlaya-sobaka/db1000n_mobile/pulls)
       if you found any bugs, missed documentation, misspells, etc
 
 ---
 
 ???+ faq "I'm a developer, how can I help to project?"
 
-    - Check [Issues](https://github.com/Arriven/db1000n/issues) to help with important tasks
-    - Check our codebase and make [PRs](https://github.com/Arriven/db1000n/pulls)
+    - Check [Issues](https://github.com/zlaya-sobaka/db1000n_mobile/issues) to help with important tasks
+    - Check our codebase and make [PRs](https://github.com/zlaya-sobaka/db1000n_mobile/pulls)
     - Test an app on different platforms and report bugs or feature requests
 
 ---
@@ -50,7 +50,7 @@
 
 ???+ faq "Should I care about costs if I run an app in public cloud?"
 
-    ???+ info "[Yes](https://github.com/Arriven/db1000n/issues/153)"
+    ???+ info "[Yes](https://github.com/zlaya-sobaka/db1000n_mobile/issues/153)"
 
         Cloud providers could charge a huge amount of money not only for compute resources but for traffic as well.
         If you run an app in the cloud please control your billing

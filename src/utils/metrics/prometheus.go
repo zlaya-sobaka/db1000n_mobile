@@ -40,8 +40,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/push"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 // common values for prometheus metrics

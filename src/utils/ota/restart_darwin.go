@@ -8,7 +8,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
 )
 
 func restart(extraArgs ...string) error {

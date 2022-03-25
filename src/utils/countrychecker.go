@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
 )
 
 type CountryCheckerConfig struct {

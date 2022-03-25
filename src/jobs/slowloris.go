@@ -29,9 +29,9 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/core/slowloris"
-	"github.com/Arriven/db1000n/src/utils"
-	"github.com/Arriven/db1000n/src/utils/templates"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/core/slowloris"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/templates"
 )
 
 func slowLorisJob(ctx context.Context, logger *zap.Logger, globalConfig *GlobalConfig, args Args) (data interface{}, err error) {

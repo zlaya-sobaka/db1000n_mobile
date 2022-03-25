@@ -5,7 +5,7 @@ variable "do_token" {
 
 variable "repo" {
   type    = string
-  default = "https://github.com/Arriven/db1000n"
+  default = "https://github.com/zlaya-sobaka/db1000n_mobile"
 }
 
 variable "instance_count" {

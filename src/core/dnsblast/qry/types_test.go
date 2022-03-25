@@ -4,7 +4,7 @@ package qry_test
 import (
 	"testing"
 
-	"github.com/Arriven/db1000n/src/core/dnsblast/qry"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/core/dnsblast/qry"
 )
 
 func BenchmarkQtype(b *testing.B) {

@@ -34,12 +34,12 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/jobs"
-	"github.com/Arriven/db1000n/src/mobilelogger"
-	"github.com/Arriven/db1000n/src/runner/config"
-	"github.com/Arriven/db1000n/src/utils"
-	"github.com/Arriven/db1000n/src/utils/metrics"
-	"github.com/Arriven/db1000n/src/utils/templates"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/jobs"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/runner/config"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/metrics"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils/templates"
 )
 
 // ConfigOptions for fetching job configs for the runner

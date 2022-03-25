@@ -31,8 +31,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Arriven/db1000n/src/core/dnsblast"
-	"github.com/Arriven/db1000n/src/utils"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/core/dnsblast"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/utils"
 )
 
 type dnsBlastConfig struct {

@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Arriven/db1000n/src/mobilelogger"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/zlaya-sobaka/db1000n_mobile/src/mobilelogger"
 )
 
 func serveMetrics(ctx context.Context) {
