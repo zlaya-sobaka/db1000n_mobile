@@ -44,7 +44,7 @@ func restart(extraArgs ...string) error {
 		return fmt.Errorf("failed to spawn a new process: %w", err)
 	}
 
-	mobilelogger.Infof("new process has been started successfully [old_pid=%d,new_pid=%d]\n",
+	log.Printf("new process has been started successfully [old_pid=%d,new_pid=%d]\n",
 		os.Getpid(), fork)
 
 	os.Exit(0)
