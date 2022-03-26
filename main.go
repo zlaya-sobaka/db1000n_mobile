@@ -52,7 +52,7 @@ func main() {
 	log.SetFlags(log.Ldate | log.Lmicroseconds | log.Lshortfile | log.LUTC)
 
 	a := app.New()
-	w := a.NewWindow("Hello World")
+	w := a.NewWindow("DB1000N_Mobile")
 
 	w.SetContent(widget.NewLabel("Logger Started!"))
 
