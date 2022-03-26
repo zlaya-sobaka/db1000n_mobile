@@ -54,14 +54,10 @@ func main() {
 	a := app.New()
 	w := a.NewWindow("DB1000N_Mobile")
 
-	w.SetContent(widget.NewLabel("Logger Started!"))
-
 	label := widget.NewLabel("")
-
 	mobilelogger.NewLogger(label)
 
 	w.SetContent(label)
-
 	mobilelogger.Infof("DB1000n_mobile [Version: %s][PID=%d]\n", ota.Version, os.Getpid())
 
 	runnerConfigOptions := runner.NewConfigOptionsWithFlags()
