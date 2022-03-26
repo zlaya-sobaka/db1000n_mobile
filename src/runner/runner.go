@@ -216,8 +216,8 @@ func dumpMetrics(clientID string) error {
 	networkStatsWriter := tabwriter.NewWriter(os.Stdout, 1, 1, 1, ' ', tabwriter.AlignRight)
 
 	if bytesGenerated > 0 {
-		mobilelogger.Infof("\n\n!Атака проводиться успішно! Русскій воєнний корабль іди нахуй!")
-		mobilelogger.Infof("!Attack is successful! Russian warship, go fuck yourself!")
+		mobilelogger.Infof("\n\n!Атака проводиться успішно!\n Русскій воєнний корабль іди нахуй!")
+		mobilelogger.Infof("!Attack is successful!\n Russian warship, go fuck yourself!")
 
 		const BytesInMegabytes = 1024 * 1024
 		megabytesGenerated := float64(bytesGenerated) / BytesInMegabytes
@@ -232,7 +232,7 @@ func dumpMetrics(clientID string) error {
 		mobilelogger.Infof("[\tResponse rate\t]\t%.1f\t%%\n", responsePercent)
 		mobilelogger.Infof("-------------------------------\n\n")
 	} else {
-		mobilelogger.Infof("[Error] No traffic generated. If you see this message a lot - contact admins")
+		mobilelogger.Infof("[Error] No traffic generated.\n If you see this message a lot - contact admins")
 	}
 
 	networkStatsWriter.Flush()

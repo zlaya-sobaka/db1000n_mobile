@@ -34,6 +34,7 @@ import (
 	"syscall"
 	"time"
 
+	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/widget"
 	"go.uber.org/zap"
@@ -55,9 +56,11 @@ func main() {
 	w := a.NewWindow("DB1000N_Mobile")
 
 	label := widget.NewLabel("")
+	label.Wrapping = fyne.TextWrapWord
 	mobilelogger.NewLogger(label)
 
 	w.SetContent(label)
+
 	mobilelogger.Infof("DB1000n_mobile [Version: %s][PID=%d]\n", ota.Version, os.Getpid())
 
 	runnerConfigOptions := runner.NewConfigOptionsWithFlags()
