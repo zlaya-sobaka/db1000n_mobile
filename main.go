@@ -55,11 +55,12 @@ func main() {
 	w := a.NewWindow("Hello World")
 
 	w.SetContent(widget.NewLabel("Logger Started!"))
-	textGrid := widget.NewTextGrid()
 
-	mobilelogger.NewLogger(textGrid)
+	label := widget.NewLabel("")
 
-	w.SetContent(textGrid)
+	mobilelogger.NewLogger(label)
+
+	w.SetContent(label)
 
 	mobilelogger.Infof("DB1000n_mobile [Version: %s][PID=%d]\n", ota.Version, os.Getpid())
 

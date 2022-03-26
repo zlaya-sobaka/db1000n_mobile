@@ -11,108 +11,51 @@ import (
 var log Logger
 var counter int = 1
 var currentLog string
-
-//Fields Type to pass when we want to call WithFields for structured logging
-type Fields map[string]interface{}
-
-type LogLevel string
-
-const (
-	// Debug has verbose message.
-	Debug LogLevel = "debug"
-	// Info is default log level.
-	Info LogLevel = "info"
-	// Error is for logging errors.
-	Error LogLevel = "error"
-	// Fatal is for logging fatal messages. The system shutdown after logging the message.
-	Fatal LogLevel = "fatal"
-)
+var lastLogs []string
 
 //Logger is our contract for the logger
 type Logger interface {
-	Debugf(format string, args ...interface{})
-
 	Infof(format string, args ...interface{})
-
-	Errorf(format string, args ...interface{})
-
-	Fatalf(format string, args ...interface{})
-}
-
-// Configuration stores the config for the logger
-// For some loggers there can only be one level across writers, for such the level of Console is picked by default
-type Configuration struct {
-	ConsoleLevel LogLevel
 }
 
 // NewLogger returns an instance of logger
-func NewLogger(textgrid *widget.TextGrid) {
+func NewLogger(textgrid *widget.Label) {
 	logger := newZeroLogger(textgrid)
 	log = logger
-}
-
-func Debugf(format string, args ...interface{}) {
-	log.Debugf(format, args...)
 }
 
 func Infof(format string, args ...interface{}) {
 	log.Infof(format, args...)
 }
 
-func Errorf(format string, args ...interface{}) {
-	log.Errorf(format, args...)
-}
-
-func Fatalf(format string, args ...interface{}) {
-	log.Fatalf(format, args...)
-}
-
 type MobileLogLogger struct {
-	textgrid *widget.TextGrid
+	list *widget.Label
 }
 
-func newZeroLogger(textgrid *widget.TextGrid) Logger {
+func newZeroLogger(list *widget.Label) Logger {
 	return &MobileLogLogger{
-		textgrid: textgrid,
+		list: list,
 	}
-}
-
-func (l *MobileLogLogger) Debugf(format string, args ...interface{}) {
-	currentLog = l.textgrid.Text()
-	if len(strings.Split(currentLog, "\n")) > 100 {
-		currentLog = ""
-	}
-	currentLog = "\n " + fmt.Sprintf(format, args...)
-
-	l.textgrid.SetText(currentLog)
 }
 
 func (l *MobileLogLogger) Infof(format string, args ...interface{}) {
-	currentLog = l.textgrid.Text()
-	if len(strings.Split(currentLog, "\n")) > 100 {
-		currentLog = ""
+	newLog := fmt.Sprintf(format, args...)
+	if len(lastLogs) >= 25 {
+		for i := range lastLogs {
+			if i != len(lastLogs)-1 {
+				lastLogs[i] = lastLogs[i+1]
+			} else {
+				lastLogs[i] = strings.TrimSpace(newLog)
+			}
+		}
+	} else {
+		lastLogs = append(lastLogs, strings.TrimSpace(newLog))
 	}
-	currentLog = "\n " + fmt.Sprintf(format, args...)
-
-	l.textgrid.SetText(currentLog)
-}
-
-func (l *MobileLogLogger) Errorf(format string, args ...interface{}) {
-	currentLog = l.textgrid.Text()
-	if len(strings.Split(currentLog, "\n")) > 100 {
-		currentLog = ""
+	currLog := ""
+	for _, v := range lastLogs {
+		currLog += fmt.Sprintf("%s \n", v)
 	}
-	currentLog = "\n " + fmt.Sprintf(format, args...)
 
-	l.textgrid.SetText(currentLog)
-}
-
-func (l *MobileLogLogger) Fatalf(format string, args ...interface{}) {
-	currentLog = l.textgrid.Text()
-	if len(strings.Split(currentLog, "\n")) > 100 {
-		currentLog = ""
-	}
-	currentLog = "\n " + fmt.Sprintf(format, args...)
-
-	l.textgrid.SetText(currentLog)
+	l.list.SetText(currLog)
+	l.list.Refresh()
 }
