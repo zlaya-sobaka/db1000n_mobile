@@ -15,4 +15,8 @@ I will update both the repo and this doc as I go during following days (date of 
 [Gitlab mirror](https://gitlab.com/db1000n/db1000n.git)
 
 go get -u github.com/fyne-io/fyne-cross
-fyne-cross android -app-id db1000n_mobile.1
+
+go get fyne.io/fyne/v2/cmd/fyne
+go install fyne.io/fyne/v2/cmd/fyne
+
+fyne release -os android -appID zlaya.sobaka.db1000n_mobile -appVersion 1.0 -appBuild 1 -keyStore ./my-release-key.keystore -icon ./Icon.png
